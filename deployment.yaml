@@ -22,7 +22,7 @@ spec:
           httpGet:
             path: /health/ready
             port: 3000
-          initialDelaySeconds: 10
+          initialDelaySeconds: 5
           periodSeconds: 5
           timeoutSeconds: 3
           successThreshold: 1
@@ -32,9 +32,9 @@ spec:
           httpGet:
             path: /health/live
             port: 3000
-          initialDelaySeconds: 20
-          periodSeconds: 15
+          initialDelaySeconds: 25
+          periodSeconds: 10
           timeoutSeconds: 3
           successThreshold: 1
-          failureThreshold: 3
+          failureThreshold: 5
 
